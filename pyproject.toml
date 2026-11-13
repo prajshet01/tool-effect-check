@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tool-effect-check"
+version = "0.1.0"
+description = "Check that a tool call that claims success actually caused its intended effect."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["effect_check*"]
